@@ -1,0 +1,107 @@
+/* Base Section */
+.contact {
+  padding: 100px 10%;
+  background: linear-gradient(135deg, #0a0a0a, #111);
+  color: #fff;
+  text-align: center;
+}
+
+/* Heading */
+.contact h2 {
+  font-size: 2.5rem;
+  color: #00d4ff;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.contact h2::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background: #00d4ff;
+  position: absolute;
+  left: 20%;
+  bottom: -10px;
+  border-radius: 5px;
+}
+
+/* Form Container */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(0, 212, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* Input Fields */
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #00d4ff;
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #ccc;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #fff;
+  background: rgba(0, 212, 255, 0.1);
+}
+
+/* Textarea */
+.contact textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* Submit Button */
+.contact button {
+  background: #00d4ff;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact button:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 5%;
+  }
+
+  .contact form {
+    padding: 25px;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+}
