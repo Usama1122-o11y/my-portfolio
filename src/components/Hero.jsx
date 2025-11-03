@@ -1,5 +1,5 @@
 import React from "react";
-import UsamaImage from "./profile.jpg";
+import "./Hero.css";
 
 export default function Hero() {
   return (
@@ -7,7 +7,11 @@ export default function Hero() {
       <div className="container">
         {/* Left Side: Profile Image */}
         <div className="hero-left">
-          <img src={UsamaImage} alt="Usama Israr" className="hero-img" />
+          <img
+            src="/images/profile.jpg"
+            alt="Usama Israr"
+            className="hero-img"
+          />
         </div>
 
         {/* Right Side: Text Content */}

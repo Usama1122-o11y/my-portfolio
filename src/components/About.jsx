@@ -1,5 +1,4 @@
 import React from "react";
-import AboutImage from "./about.jpg";
 
 export default function About() {
   return (
@@ -28,7 +27,7 @@ export default function About() {
           {/* 💻 Image Section */}
           <div className="about-image">
             <img
-              src={AboutImage}
+              src="/images/about.jpg"
               alt="Usama Israr - Frontend Developer"
               loading="lazy"
             />
